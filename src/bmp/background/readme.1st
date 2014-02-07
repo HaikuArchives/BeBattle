@@ -1,0 +1,5 @@
+-There has to be a board.png in this directory (else the game will crash).
+
+-You can make your own boards...  (Just copy one of them over the current board.png)
+
+-If your board.png is smaller or larger than 448x448, it will be resized to fit the entire board.
