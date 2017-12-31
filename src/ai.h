@@ -4,7 +4,7 @@
 #include "dview.h"
 #include "beunit.h"
 //---------------------------------------------------------------------
-typedef	list<Item>::iterator ITER;
+typedef	std::list<Item>::iterator ITER;
 //---------------------------------------------------------------------
 struct Action //A possible action
 {

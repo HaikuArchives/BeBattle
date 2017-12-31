@@ -9,8 +9,8 @@
 #include "animation.h"
 #include "convert.h"
 //---------------------------------------------------------------------
-typedef	list<Item>::iterator ITER;
-typedef	list<Item>::reverse_iterator RITER;
+typedef	std::list<Item>::iterator ITER;
+typedef	std::list<Item>::reverse_iterator RITER;
 enum BUTTONMODE{Option, Unit};
 //---------------------------------------------------------------------
 class DView : public BView
@@ -20,7 +20,7 @@ class DView : public BView
 	BBitmap* OffscreenBitmap; //to avoid flicker while drawing
 	BView* OffscreenView; //used by the offscreen bitmap
 	
-	list<Item> Liste; //All units are in this list
+	std::list<Item> Liste; //All units are in this list
 	ITER Active; //iterator to active unit
 	ITER Passive; //iterator to current target (passive unit)
 	BUTTONMODE Mode; //current button set
